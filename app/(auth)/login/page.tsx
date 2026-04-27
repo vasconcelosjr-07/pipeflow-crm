@@ -53,10 +53,10 @@ export default function PaginaLogin() {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-border shadow-sm p-8">
+    <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
       <div className="mb-6">
-        <h1 className="text-xl font-semibold text-foreground">Bem-vindo de volta</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <h1 className="text-xl font-semibold text-slate-900">Bem-vindo de volta</h1>
+        <p className="text-sm text-slate-500 mt-1">
           Entre com sua conta para continuar
         </p>
       </div>
@@ -74,7 +74,7 @@ export default function PaginaLogin() {
             disabled={carregando}
           />
           {erros.email && (
-            <p className="text-xs text-destructive">{erros.email}</p>
+            <p className="text-xs text-red-500">{erros.email}</p>
           )}
         </div>
 
@@ -98,13 +98,13 @@ export default function PaginaLogin() {
             disabled={carregando}
           />
           {erros.senha && (
-            <p className="text-xs text-destructive">{erros.senha}</p>
+            <p className="text-xs text-red-500">{erros.senha}</p>
           )}
         </div>
 
         {erroGeral && (
-          <div className="rounded-lg bg-destructive/10 border border-destructive/20 px-3 py-2">
-            <p className="text-sm text-destructive">{erroGeral}</p>
+          <div className="rounded-lg bg-red-50 border border-red-200 px-3 py-2">
+            <p className="text-sm text-red-500">{erroGeral}</p>
           </div>
         )}
 
@@ -124,7 +124,7 @@ export default function PaginaLogin() {
         </Button>
       </form>
 
-      <p className="text-center text-sm text-muted-foreground mt-6">
+      <p className="text-center text-sm text-slate-500 mt-6">
         Não tem uma conta?{" "}
         <Link
           href="/signup"

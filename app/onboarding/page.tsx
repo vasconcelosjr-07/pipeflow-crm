@@ -76,7 +76,7 @@ export default function PaginaOnboarding() {
                   <span
                     className={[
                       "text-xs whitespace-nowrap",
-                      atual ? "text-foreground font-medium" : "text-muted-foreground",
+                      atual ? "text-slate-900 font-medium" : "text-slate-500",
                     ].join(" ")}
                   >
                     {etapa}
@@ -108,10 +108,10 @@ export default function PaginaOnboarding() {
             </div>
 
             <div className="text-center mb-6">
-              <h1 className="text-xl font-semibold text-foreground">
+              <h1 className="text-xl font-semibold text-slate-900">
                 Crie seu workspace
               </h1>
-              <p className="text-sm text-muted-foreground mt-1.5">
+              <p className="text-sm text-slate-500 mt-1.5">
                 O workspace é onde você e seu time gerenciam os leads e negócios.
                 Pode ser o nome da sua empresa ou equipe.
               </p>
@@ -133,7 +133,7 @@ export default function PaginaOnboarding() {
                 {erroNome && (
                   <p className="text-xs text-destructive">{erroNome}</p>
                 )}
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs text-slate-500">
                   Você poderá alterar isso depois em Configurações.
                 </p>
               </div>

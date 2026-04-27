@@ -41,14 +41,14 @@ export default function PaginaRecuperarSenha() {
 
   if (enviado) {
     return (
-      <div className="bg-white rounded-xl border border-border shadow-sm p-8 text-center">
+      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8 text-center">
         <div className="flex justify-center mb-4">
           <div className="size-12 rounded-full bg-[#10B981]/10 flex items-center justify-center">
             <MailCheck className="size-6 text-[#10B981]" />
           </div>
         </div>
-        <h1 className="text-xl font-semibold text-foreground">Verifique seu e-mail</h1>
-        <p className="text-sm text-muted-foreground mt-2">
+        <h1 className="text-xl font-semibold text-slate-900">Verifique seu e-mail</h1>
+        <p className="text-sm text-slate-500 mt-2">
           Enviamos um link para você redefinir sua senha. Pode levar alguns minutos.
         </p>
         <Link
@@ -62,10 +62,10 @@ export default function PaginaRecuperarSenha() {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-border shadow-sm p-8">
+    <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
       <div className="mb-6">
-        <h1 className="text-xl font-semibold text-foreground">Recuperar senha</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <h1 className="text-xl font-semibold text-slate-900">Recuperar senha</h1>
+        <p className="text-sm text-slate-500 mt-1">
           Informe seu e-mail e enviaremos um link para criar uma nova senha
         </p>
       </div>
@@ -83,7 +83,7 @@ export default function PaginaRecuperarSenha() {
             disabled={carregando}
           />
           {erroEmail && (
-            <p className="text-xs text-destructive">{erroEmail}</p>
+            <p className="text-xs text-red-500">{erroEmail}</p>
           )}
         </div>
 
@@ -103,7 +103,7 @@ export default function PaginaRecuperarSenha() {
         </Button>
       </form>
 
-      <p className="text-center text-sm text-muted-foreground mt-6">
+      <p className="text-center text-sm text-slate-500 mt-6">
         <Link
           href="/login"
           className="text-[#2563EB] hover:underline font-medium"
