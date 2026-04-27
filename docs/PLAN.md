@@ -35,11 +35,11 @@
 - **Branch**: `feat/design-system`
 - **Objetivo**: Componentes base do shadcn/ui instalados e um Storybook visual simples (`/showcase`) para validar a identidade visual antes de construir telas.
 - **Entregas**:
-  - [ ] Instalar componentes shadcn/ui: `button`, `input`, `label`, `card`, `dialog`, `dropdown-menu`, `table`, `form`, `badge`, `avatar`, `tabs`, `select`, `toast`
-  - [ ] Criar página `/showcase` (apenas em dev) mostrando todos os componentes com variações
-  - [ ] Definir tokens de cor no CSS (variáveis para light/dark mode)
-  - [ ] Criar componente `Logo` do PipeFlow
-  - [ ] Configurar `lucide-react` para ícones
+  - [x] Instalar componentes shadcn/ui: `button`, `input`, `label`, `card`, `dialog`, `dropdown-menu`, `table`, `form`, `badge`, `avatar`, `tabs`, `select`, `toast`
+  - [x] Criar página `/showcase` (apenas em dev) mostrando todos os componentes com variações
+  - [x] Definir tokens de cor no CSS (variáveis para light/dark mode)
+  - [x] Criar componente `Logo` do PipeFlow
+  - [x] Configurar `lucide-react` para ícones
 - **Commit final**: `feat: adicionar design system com shadcn/ui e showcase`
 
 ---
@@ -81,12 +81,12 @@
 - **Branch**: `feat/shell-app`
 - **Objetivo**: Estrutura visual da área logada com sidebar, header, workspace switcher e navegação entre seções.
 - **Entregas**:
-  - [ ] Layout `app/(app)/layout.tsx` com sidebar fixa + área de conteúdo
-  - [ ] Sidebar com navegação: Dashboard, Leads, Pipeline, Configurações
-  - [ ] Workspace switcher no topo da sidebar (dropdown com workspaces mocados)
-  - [ ] Avatar do usuário no canto inferior + menu (perfil, sair)
-  - [ ] Header com breadcrumb da página atual
-  - [ ] Sidebar colapsável em telas pequenas (mobile drawer)
+  - [x] Layout `app/(app)/layout.tsx` com sidebar fixa + área de conteúdo
+  - [x] Sidebar com navegação: Dashboard, Leads, Pipeline, Configurações
+  - [x] Workspace switcher no topo da sidebar (dropdown com workspaces mocados)
+  - [x] Avatar do usuário no canto inferior + menu (perfil, sair)
+  - [x] Header com breadcrumb da página atual
+  - [x] Sidebar colapsável em telas pequenas (mobile drawer)
 - **Commit final**: `feat: criar shell do app com sidebar e workspace switcher`
 
 ---

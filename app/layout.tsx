@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-// Inter como fonte principal da UI (--font-sans que o shadcn/ui usa por padrão)
-const inter = Inter({
-  subsets: ["latin"],
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
   variable: "--font-sans",
+  weight: "100 900",
 });
 
-// Geist Mono para valores monetários e números
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-mono",
@@ -28,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={cn("font-sans", inter.variable)}>
+    <html lang="pt-BR" className={cn("dark font-sans", geistSans.variable)} suppressHydrationWarning>
       <body className={`${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
