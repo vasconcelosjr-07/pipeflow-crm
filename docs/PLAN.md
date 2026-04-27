@@ -18,15 +18,15 @@
 - **Branch**: `chore/setup-projeto`
 - **Objetivo**: Repositório inicializado com Next.js 14, TypeScript, Tailwind, shadcn/ui e estrutura de pastas pronta para escalar.
 - **Entregas**:
-  - [ ] `npx create-next-app@latest` com TypeScript, Tailwind, App Router, ESLint
-  - [ ] Configurar `tsconfig.json` em modo estrito (`strict: true`)
-  - [ ] Instalar e inicializar shadcn/ui (`npx shadcn@latest init`)
-  - [ ] Configurar paleta de cores e fontes (Inter + Geist Mono) no `tailwind.config.ts`
-  - [ ] Criar estrutura de pastas: `app/`, `components/`, `lib/`, `hooks/`, `types/`
-  - [ ] Criar `.env.local.example` com placeholders das chaves
-  - [ ] Criar `.gitignore` (incluir `.env.local`)
-  - [ ] Inicializar repositório Git e fazer primeiro push para GitHub
-  - [ ] README curto explicando como rodar (`npm install` + `npm run dev`)
+  - [x] `npx create-next-app@latest` com TypeScript, Tailwind, App Router, ESLint
+  - [x] Configurar `tsconfig.json` em modo estrito (`strict: true`)
+  - [x] Instalar e inicializar shadcn/ui (`npx shadcn@latest init`)
+  - [x] Configurar paleta de cores e fontes (Inter + Geist Mono) no `tailwind.config.ts`
+  - [x] Criar estrutura de pastas: `app/`, `components/`, `lib/`, `hooks/`, `types/`
+  - [x] Criar `.env.local.example` com placeholders das chaves
+  - [x] Criar `.gitignore` (incluir `.env.local`)
+  - [x] Inicializar repositório Git e fazer primeiro push para GitHub
+  - [x] README curto explicando como rodar (`npm install` + `npm run dev`)
 - **Commit final**: `chore: inicializar projeto com next.js, tailwind e shadcn/ui`
 
 ---
