@@ -3,7 +3,6 @@
 import { LogOut, Settings, User } from "lucide-react"
 import { usuarioMock } from "@/lib/mocks/workspaces"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,14 +25,7 @@ export function NavUsuario() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger
-        render={
-          <Button
-            variant="ghost"
-            className="w-full justify-start gap-3 px-2 py-2 h-auto hover:bg-sidebar-accent/60 data-[popup-open]:bg-sidebar-accent/60"
-          />
-        }
-      >
+      <DropdownMenuTrigger className="flex w-full items-center gap-3 rounded-md px-2 py-2 text-left outline-none hover:bg-sidebar-accent/60 focus-visible:ring-2 focus-visible:ring-ring data-[popup-open]:bg-sidebar-accent/60">
         <Avatar size="sm">
           {usuarioMock.avatarUrl && (
             <AvatarImage src={usuarioMock.avatarUrl} alt={usuarioMock.nome} />

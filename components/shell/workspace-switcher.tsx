@@ -8,11 +8,11 @@ import {
   workspaceAtualMock,
   type Workspace,
 } from "@/lib/mocks/workspaces"
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuGroup,
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
@@ -25,25 +25,20 @@ export function WorkspaceSwitcher() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger
-        render={
-          <Button
-            variant="ghost"
-            className="w-full justify-start gap-2 px-2 hover:bg-sidebar-accent/60 data-[popup-open]:bg-sidebar-accent/60"
-          />
-        }
-      >
-        <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-semibold flex-shrink-0">
+      <DropdownMenuTrigger className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left outline-none hover:bg-sidebar-accent/60 focus-visible:ring-2 focus-visible:ring-ring data-[popup-open]:bg-sidebar-accent/60">
+        <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-semibold">
           {workspaceAtual.iniciais}
         </div>
-        <span className="flex-1 truncate text-left text-sm font-medium text-sidebar-foreground">
+        <span className="flex-1 truncate text-sm font-medium text-sidebar-foreground">
           {workspaceAtual.nome}
         </span>
-        <ChevronsUpDown className="h-4 w-4 text-sidebar-foreground/50 flex-shrink-0" />
+        <ChevronsUpDown className="h-4 w-4 shrink-0 text-sidebar-foreground/50" />
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-64" side="bottom" align="start">
-        <DropdownMenuLabel>Workspaces</DropdownMenuLabel>
+        <DropdownMenuGroup>
+          <DropdownMenuLabel>Workspaces</DropdownMenuLabel>
+        </DropdownMenuGroup>
         <DropdownMenuSeparator />
 
         {workspacesMock.map((ws) => (
