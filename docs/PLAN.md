@@ -67,13 +67,14 @@
 - **Branch**: `feat/telas-auth`
 - **Objetivo**: Telas de login, signup e recuperar senha bonitas e funcionais visualmente (sem backend ainda — só validação de form).
 - **Entregas**:
-  - [ ] Layout `app/(auth)/layout.tsx` (centralizado, com logo)
-  - [ ] Tela `/signup` com form (nome, e-mail, senha) + validação `zod`
-  - [ ] Tela `/login` com form (e-mail, senha)
-  - [ ] Tela `/forgot-password`
-  - [ ] Estados de loading e erro nos forms
-  - [ ] Links cruzados (login ↔ signup ↔ forgot)
-- **Commit final**: `feat: criar telas de signup, login e recuperar senha`
+  - [x] Layout `app/(auth)/layout.tsx` (centralizado, com logo)
+  - [x] Tela `/signup` com form (nome, e-mail, senha, confirmar senha) + validação `zod` + barra de força da senha
+  - [x] Tela `/login` com form (e-mail, senha)
+  - [x] Tela `/forgot-password` com confirmação visual pós-envio
+  - [x] Tela `/onboarding` com nome do workspace + barra de progresso
+  - [x] Estados de loading e erro nos forms (cores fixas, sem variáveis CSS)
+  - [x] Links cruzados (login ↔ signup ↔ forgot)
+- **Commit final**: `feat: criar telas de signup, login, recuperar senha e onboarding`
 
 ---
 
